@@ -925,6 +925,10 @@ img {
   background-color: var(--accent-bg-color);
 }
 
+.footer-block {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .footer-block {
     display: flex;
@@ -1007,13 +1011,13 @@ img {
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
 }
 
 .subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -1033,6 +1037,12 @@ img {
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
