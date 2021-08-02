@@ -1,5 +1,6 @@
 .social {
-  margin-right: 93px;
+  text-align: center;
+  // margin-right: 93px;
 
   &-text {
     margin-bottom: 20px;
@@ -11,4 +12,8 @@
     text-transform: uppercase;
     color: var(--main-bg-color);
   }
+}
+
+.social-mob-style {
+  margin-bottom: 60px;
 }

@@ -12,20 +12,6 @@
   align-items: center;
 }
 
-.logo {
-  text-decoration: none;
-  color: var(--accent-text-color);
-  font-family: Raleway;
-  font-weight: var(--bold-font);
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-
-  &__color {
-    color: #000;
-  }
-}
-
 .menu {
   display: flex;
   margin-left: 93px;
