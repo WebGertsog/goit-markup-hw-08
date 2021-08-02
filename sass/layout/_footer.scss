@@ -5,16 +5,23 @@
 
   &-block {
     text-align: center;
+
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
       justify-content: space-around;
     }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      text-align: left;
+      justify-content: flex-start;
+    }
   }
 
   &__logo {
-    // display: inline-block;
+    display: inline-block;
     margin-bottom: 20px;
   }
 }
@@ -26,8 +33,11 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: -60px;
+    align-items: flex-start;
+    margin-bottom: 0;
     margin-right: 70px;
+
+
   }
 }
 
@@ -37,6 +47,10 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-bg-color);
+
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
 }
 
 .address-style {
@@ -48,7 +62,8 @@
 }
 
 .footer-list {
-  &__item:not(:last-child) {
+  margin-bottom: -9px;
+  &__item {
     margin-bottom: 9px;
   }
 
@@ -68,3 +83,4 @@
     }
   }
 }
+

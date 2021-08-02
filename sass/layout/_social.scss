@@ -1,6 +1,10 @@
 .social {
   text-align: center;
-  // margin-right: 93px;
+
+  @media screen and (min-width: 1200px) {
+  margin-right: 93px;
+  text-align: left;
+  }
 
   &-text {
     margin-bottom: 20px;
@@ -16,4 +20,8 @@
 
 .social-mob-style {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
