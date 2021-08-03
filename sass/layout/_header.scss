@@ -5,15 +5,24 @@
 .main-navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .navigation {
   display: flex;
-  align-items: center;
+  // align-items: center;
 }
 
 .menu {
   display: flex;
+  display: none;
   margin-left: 93px;
 
   &__item + &__item {
@@ -58,6 +67,7 @@
 
 .contacts {
   display: flex;
+  display: none;
   margin-left: auto;
 
   &__item {
@@ -91,5 +101,21 @@
   &__icons {
     margin-right: 10px;
     fill: currentColor;
+  }
+}
+
+.menu-btn {
+  display: block;
+  width: 24px;
+  height: 16px;
+  align-items: center;
+  padding: 0;
+  background: none;
+  border: none;
+  fill: #000;
+
+  .menu-icon:hover,
+  .menu-icon:focus {
+    fill: var(--accent-text-color);
   }
 }
