@@ -16,3 +16,13 @@
     color: #000;
   }
 }
+
+.logo-mob-style{
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+}
