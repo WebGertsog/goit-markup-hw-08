@@ -1131,15 +1131,11 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .products__item {
     width: 370px;
     flex-basis: calc(100% / 3 - 30px);
   }
-}
-
-.products__item:not(:last-child) {
-  margin-bottom: 40px;
 }
 
 .products__item:hover, .products__item:focus {
