@@ -8,14 +8,13 @@
   }
 
   &__item {
-    width: 100%;
+    display: flex;
     background: var(--main-bg-color);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
       margin-top: 30px;
       margin-left: 30px;
-      width: 354px;
       flex-basis: calc(100% / 2 - 30px);
     }
 
@@ -23,17 +22,23 @@
       width: 370px;
       flex-basis: calc(100% / 3 - 30px);
     }
-    // &:not(:last-child) {
-    //   margin-bottom: 30px;
-    // }
 
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
     &:hover,
     &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
-
   &__thumb {
     position: relative;
     overflow: hidden;
@@ -56,8 +61,8 @@
     transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .products__item:hover &,
-    .products__item:hover & {
+    .products__link:hover &,
+    .products__link:hover & {
       transform: translateY(0);
     }
   }
@@ -70,6 +75,7 @@
   }
 
   &__bottom-block {
+    flex-grow: 1;
     padding: 20px 24px;
     border-right: var(--bottom-border);
     border-bottom: var(--bottom-border);
@@ -97,7 +103,7 @@
 }
 
 .card {
-  width: 100%;
+  display: flex;
 }
 
 // .products {
