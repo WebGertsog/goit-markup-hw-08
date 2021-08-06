@@ -1,24 +1,37 @@
 .main-section {
-  // max-width: 1600px;
-  // margin-left: auto;
-  // margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+ 
   padding-top: 180px;
   padding-bottom: 180px;
   text-align: center;
 
   background: linear-gradient(rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)),
-  url(../images/studio/main-bgi.jpg), #c4c4c4;
+  url(../images/main-bg-mb.jpg), #c4c4c4;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  @media screen and(min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    max-width: 1200px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-bg-tb.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
- }
+    max-width: 1600px;
 
-  .main-section__title {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-bg.jpg);
+  }
+
+
+
+    &__title {
     margin-top: 0;
     margin-bottom: 30px;
 
@@ -52,5 +65,30 @@
 
   @media screen and(min-width: 1200px) {
      width: 696px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-bg-mb@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-bg-tb@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-bg@2x.jpg);
   }
 }
